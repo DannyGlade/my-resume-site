@@ -1,6 +1,9 @@
 import Head from "next/head";
 import Link from "next/link";
 
+// layout import
+import MainLayout from "../../components/layouts/admin/MainLayout";
+
 export default function Dashboard() {
   return (
     <>
@@ -12,3 +15,11 @@ export default function Dashboard() {
     </>
   );
 }
+
+Dashboard.getLayout = (page) => {
+  return (
+    <>
+      <MainLayout>{page}</MainLayout>
+    </>
+  );
+};

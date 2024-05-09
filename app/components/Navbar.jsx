@@ -18,7 +18,7 @@ export default function Navbar() {
                 <div className={styles.navbar__top}>
                     <div className={styles.navbar__logo}>D/N</div>
                     <div className={styles.navbar__menu} onClick={toggleMenu}>
-                        Menu
+                        {!menu ? "V" : "A"}
                     </div>
                 </div>
                 <div className={[styles.navbar__menu, menu ? styles.menu__expanded : styles.menu__collapsed].join(' ')} >

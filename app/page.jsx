@@ -1,7 +1,9 @@
-import React from 'react'
+"use client";
+
+import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
 
-export default function page() {
+export default function Page() {
     return (
         <>
             <Navbar />

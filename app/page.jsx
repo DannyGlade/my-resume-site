@@ -2,14 +2,16 @@
 
 import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
+import Hero from './components/Hero';
+import styles from './styles.module.css'
 
 export default function Page() {
     return (
         <>
             <Navbar />
-
-            <h1>Home</h1>
-            <p>Home page content</p>
+            <main className={styles.main}>
+                <Hero />
+            </main>
         </>
     )
 }

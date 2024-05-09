@@ -2,7 +2,7 @@
 "use client";
 
 import React, { useState } from 'react'
-import styles from './Navbar.module.css'
+import styles from './styles.module.css'
 
 export default function Navbar() {
 

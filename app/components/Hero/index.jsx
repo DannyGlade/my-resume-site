@@ -11,11 +11,11 @@ export default function Hero() {
     return (
         <div className={styles.hero}>
             <div className={styles.hero__image_container}>
-                <Image src="/DarshanNariyaMobile.png" alt="Hero" fill objectFit='cover' />
+                <Image src="/DarshanNariyaMobile.png" alt="Hero" fill objectFit='contain' className={styles.hero__image} />
             </div>
             <div className={styles.hero__content}>
                 <div className={styles.name__carousal}> Hey, I'm &nbsp;
-                    <Splide options={{ type: 'loop', direction: 'ttb', autoHeight: true, heightRatio:1 ,pagination: false, arrows: false, autoplay: true, interval: 3000, gap:'0.8em', start:0 }}>
+                    <Splide options={{ type: 'loop', direction: 'ttb', autoHeight: true, heightRatio:1 ,pagination: false, arrows: false, autoplay: true, interval: 3000, gap:'0em', start:0 }}>
                         <SplideSlide>
                             <h1>Darshan</h1>
                         </SplideSlide>

@@ -11,6 +11,17 @@
     overflow: hidden;
 }
 
+.hero__content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+/* .hero__image {
+
+} */
+
 .name__carousal {
     display: flex;
     justify-content: center;
@@ -30,4 +41,58 @@
     margin: 0em 0 0em 0;
 }
 
-/*  */
+/* 768px Tablet Css */
+
+/* @media screen and (min-width: 768px) {
+    .hero {
+        height: 100vh;
+    }
+
+    .hero__image_container {
+        height: 100vh;
+    }
+
+    .name__carousal {
+        font-size: 48px;
+    }
+
+    .name__carousal h1 {
+        font-size: 48px;
+    }
+} */
+
+/* 1440px Desktop Css */
+
+@media screen and (min-width: 1440px) {
+    .hero {
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .hero__image_container {
+        width: 50%;
+    }
+
+    .hero__content {
+        width: 50%;
+        height: 100vmin;
+    }
+
+    .name__carousal {
+        display: flex !important;
+        justify-content: space-between !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: 100% !important;
+        background: rgba(0, 0, 0, 0.5) !important;
+        font-size: 40px !important; 
+    }
+
+    .name__carousal h1 {
+        font-size: 40px;
+    }
+}

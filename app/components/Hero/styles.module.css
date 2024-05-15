@@ -43,23 +43,17 @@
 
 /* 768px Tablet Css */
 
-/* @media screen and (min-width: 768px) {
-    .hero {
-        height: 100vh;
-    }
-
-    .hero__image_container {
-        height: 100vh;
-    }
+@media screen and (min-width: 768px) {
 
     .name__carousal {
-        font-size: 48px;
+        font-size: 32px;
     }
 
     .name__carousal h1 {
-        font-size: 48px;
+        font-size: 32px;
     }
-} */
+
+}
 
 /* 1440px Desktop Css */
 
@@ -84,7 +78,7 @@
 
     .name__carousal {
         display: flex !important;
-        justify-content: space-between !important;
+        justify-content: flex-start !important;
         align-items: center !important;
         width: 100% !important;
         height: 100% !important;

@@ -26,7 +26,7 @@ export default function Hero() {
                             <h1>Designer</h1>
                         </SplideSlide>
                         <SplideSlide>
-                            <h1>UI/UX Dev</h1>
+                            <h1>ui/ux Dev</h1>
                         </SplideSlide>
                         <SplideSlide>
                             <h1>Gamer</h1>

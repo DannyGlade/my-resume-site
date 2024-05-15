@@ -2,6 +2,14 @@
     margin: 0 24px;
 }
 
+/* 768px Tablet Css */
+@media screen and (min-width: 768px) {
+    .main {
+        margin: 0 96px;
+    }
+    
+}
+
 /* 1440px Desktop Css */
 
 @media screen and (min-width: 1440px) {

@@ -28,7 +28,6 @@
     align-items: start;
     width: 100%;
     height: 100%;
-    background: rgba(0, 0, 0, 0.5);
     font-size: 24px;
 }
 
@@ -45,12 +44,35 @@
 
 @media screen and (min-width: 768px) {
 
+    .hero {
+        height: 100vh;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: row-reverse;
+    }
+
+    .hero__image_container {
+        width: 50%;
+    }
+
+    .hero__content {
+        width: 50%;
+        height: 100vmin;
+    }
+
     .name__carousal {
-        font-size: 32px;
+        font-size: 22px;
+        display: flex !important;
+        justify-content: flex-start !important;
+        align-items: center !important;
+        width: 100% !important;
+        height: 100% !important;
+
     }
 
     .name__carousal h1 {
-        font-size: 32px;
+        font-size: 22px;
     }
 
 }
@@ -82,7 +104,6 @@
         align-items: center !important;
         width: 100% !important;
         height: 100% !important;
-        background: rgba(0, 0, 0, 0.5) !important;
         font-size: 40px !important; 
     }
 

@@ -7,24 +7,24 @@ import SkillCard from './SkillCard'
 export default function Skills() {
 
     const skills = [
-        { name: 'HTML5', type: 'plain' },
-        { name: 'CSS3', type: 'plain' },
-        { name: 'JavaScript', type: 'plain' },
-        { name: 'TypeScript', type: 'plain' },
-        { name: 'NodeJS', type: 'plain' },
-        { name: 'React', type: 'plain' },
-        { name: 'NextJS', type: 'plain' },
-        { name: 'Express', type: 'original' },
-        { name: 'MongoDB', type: 'plain' },
-        { name: 'Firebase', type: 'plain' },
-        { name: 'Figma', type: 'plain' },
-        { name: 'XD', type: 'plain' },
-        { name: 'Photoshop', type: 'plain' },
-        { name: 'Illustrator', type: 'plain' },
-        { name: 'Bootstrap', type: 'plain' },
-        { name: 'TailwindCSS', type: 'plain' },
-        { name: 'MaterialUI', type: 'plain' },
-        { name: 'Sqlite', type: 'plain' }
+        { name: 'HTML5', type: 'plain', colored: true },
+        { name: 'CSS3', type: 'plain', colored: true },
+        { name: 'JavaScript', type: 'plain', colored: true },
+        { name: 'TypeScript', type: 'plain', colored: true },
+        { name: 'NodeJS', type: 'plain', colored: true },
+        { name: 'React', type: 'plain', colored: true },
+        { name: 'NextJS', type: 'plain', colored: false },
+        { name: 'Express', type: 'original', colored: false },
+        { name: 'MongoDB', type: 'plain', colored: true },
+        { name: 'Firebase', type: 'plain', colored: true },
+        { name: 'Figma', type: 'plain', colored: true },
+        { name: 'XD', type: 'plain', colored: false },
+        { name: 'Photoshop', type: 'plain', colored: false },
+        { name: 'Illustrator', type: 'plain', colored: true },
+        { name: 'Bootstrap', type: 'plain', colored: true },
+        { name: 'TailwindCSS', type: 'plain', colored: true },
+        { name: 'MaterialUI', type: 'plain', colored: true },
+        { name: 'Sqlite', type: 'plain', colored: true },
     ]
 
     return (
@@ -35,7 +35,7 @@ export default function Skills() {
 
             <div className={styles.skills__container} >
                 {skills.map((skill, index) => (
-                    <SkillCard key={index} skill={skill.name} type={skill.type} />
+                    <SkillCard key={index} skill={skill.name} type={skill.type} colored={skill.colored} />
                 ))}
             </div>
 

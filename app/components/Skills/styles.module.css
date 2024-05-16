@@ -10,14 +10,10 @@
 
 .skills__container {
     /* isotope */
-    display:inline-flex;
+    display: inline-flex;
     flex-wrap: wrap;
     gap: 12px;
     justify-content: start;
-
-
-
-
 }
 
 /* skill card */
@@ -29,14 +25,68 @@
     gap: 12px;
     padding: 24px;
     border-radius: 24px;
-    background-color: #fff;
-    color: #000;
+    background-color: rgb(24, 26, 27);
+    color: #fff;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     transition: all 0.5s ease;
     width: fit-content;
-    font-size: 20px;
+    font-size: 16px;
 }
 
 .skill_card__icon {
-    font-size: 30px;
+    font-size: 20px;
+}
+
+/* 768px Tablet Css */
+
+@media screen and (min-width: 768px) {
+    .skills {
+        margin-top: 36px;
+    }
+
+    .skills__heading>h2 {
+        font-size: 24px;
+        margin: 0 0 36px 0;
+    }
+
+    .skills__container {
+        gap: 12px;
+    }
+
+    .skill_card {
+        padding: 24px;
+        border-radius: 24px;
+        font-size: 18px;
+    }
+
+    .skill_card__icon {
+        font-size: 24px;
+    }
+}
+
+/* 1440px Desktop Css */
+
+@media screen and (min-width: 1440px) {
+    .skills {
+        margin-top: 48px;
+    }
+
+    .skills__heading>h2 {
+        font-size: 40px;
+        margin: 0 0 48px 0;
+    }
+
+    .skills__container {
+        gap: 12px;
+    }
+
+    .skill_card {
+        padding: 32px;
+        border-radius: 32px;
+        font-size: 20px;
+    }
+
+    .skill_card__icon {
+        font-size: 32px;
+    }
 }

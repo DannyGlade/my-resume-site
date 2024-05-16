@@ -4,6 +4,7 @@ import React, { useEffect } from 'react'
 import Navbar from './components/Navbar'
 import Hero from './components/Hero';
 import Skills from './components/Skills';
+import Footer from './components/Footer';
 import styles from './styles.module.css'
 
 
@@ -16,6 +17,8 @@ export default function Page() {
                 <Hero />
                 <Skills />
             </main>
+            <Footer />
+
         </>
     )
 }

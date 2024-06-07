@@ -7,24 +7,28 @@ import SkillCard from './SkillCard'
 export default function Skills() {
 
     const skills = [
-        { name: 'HTML5', type: 'plain', colored: true },
-        { name: 'CSS3', type: 'plain', colored: true },
         { name: 'JavaScript', type: 'plain', colored: true },
         { name: 'TypeScript', type: 'plain', colored: true },
         { name: 'NodeJS', type: 'plain', colored: true },
         { name: 'React', type: 'plain', colored: true },
         { name: 'NextJS', type: 'plain', colored: false },
         { name: 'Express', type: 'original', colored: false },
+        { name: 'Php', type: 'plain', colored: true },
+        { name: 'Laravel', type: 'plain', colored: true },
+        { name: 'Kotlin', type: 'plain', colored: true },
+        { name: 'Java', type: 'plain', colored: true },
+        { name: 'Swift', type: 'plain', colored: true },
+        { name: 'Git', type: 'plain', colored: true },
+        { name: 'Docker', type: 'plain', colored: true },
+        { name: 'DigitalOcean', type: 'plain', colored: true },
         { name: 'MongoDB', type: 'plain', colored: true },
+        { name: 'MySQL', type: 'plain', colored: true },
+        { name: 'SQLite', type: 'plain', colored: true },
         { name: 'Firebase', type: 'plain', colored: true },
         { name: 'Figma', type: 'plain', colored: true },
-        { name: 'XD', type: 'plain', colored: false },
-        { name: 'Photoshop', type: 'plain', colored: false },
-        { name: 'Illustrator', type: 'plain', colored: true },
+        { name: 'HTML5', type: 'plain', colored: true },
+        { name: 'CSS3', type: 'plain', colored: true },
         { name: 'Bootstrap', type: 'plain', colored: true },
-        { name: 'TailwindCSS', type: 'plain', colored: true },
-        { name: 'MaterialUI', type: 'plain', colored: true },
-        { name: 'Sqlite', type: 'plain', colored: true },
     ]
 
     return (

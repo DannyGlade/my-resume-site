@@ -3,6 +3,7 @@
 
 import React, { useState } from 'react'
 import styles from './styles.module.css'
+import { ThemeToggle } from '../ThemeToggle/ThemeToggle';
 
 export default function Navbar() {
 
@@ -28,6 +29,7 @@ export default function Navbar() {
                         <a href="#experience" className={styles.navbar__menu_item}>Experience</a>
                         <a href="#projects" className={styles.navbar__menu_item}>Projects</a>
                         <a href="#contact" className={styles.navbar__menu_item}>Contact</a>
+                        <ThemeToggle className={styles.navbar__menu_item} />
                     </div>
                     {/* <div className={styles.navbar__menu_items}>
                         <a href="#skills" className={styles.navbar__menu_item}>Skills</a>

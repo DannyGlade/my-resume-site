@@ -1740,7 +1740,7 @@ isexe@^2.0.0:
   resolved "https://registry.npmjs.org/isexe/-/isexe-2.0.0.tgz"
   integrity sha1-6PvzdNxVb/iUehDcsFctYz8s+hA=
 
-isotope-layout@^3.0.6:
+isotope-layout@^3.0.5, isotope-layout@^3.0.6:
   version "3.0.6"
   resolved "https://registry.yarnpkg.com/isotope-layout/-/isotope-layout-3.0.6.tgz#d5636ec74d68e7e88fa5166fe6396858db00f432"
   integrity sha512-z2ZKablhocXhoNyWwzJPFd7u7FWbYbVJA51Nvsqsod8jH2ExGc1SwDsSWKE54e3PhXzqf2yZPhFSq/c2MR1arw==
@@ -1750,6 +1750,14 @@ isotope-layout@^3.0.6:
     get-size "^2.0.0"
     masonry-layout "^4.1.0"
     outlayer "^2.1.0"
+
+isotope-packery@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/isotope-packery/-/isotope-packery-2.0.1.tgz#156c201073edb17bfb0424bb1195cec230fd100e"
+  integrity sha512-DYk97gLGryS63cgLe8Qt3YIjPdGEQTP8gjEnglHPYBlaeUT4mlWZ8sBq0eQ4mxC8SRFF7shc+wLHAtVEbV52lw==
+  dependencies:
+    isotope-layout "^3.0.5"
+    packery "^2.0.0"
 
 iterator.prototype@^1.1.2:
   version "1.1.2"
@@ -2095,7 +2103,7 @@ optionator@^0.9.1:
     type-check "^0.4.0"
     word-wrap "^1.2.3"
 
-outlayer@^2.1.0:
+outlayer@^2.0.0, outlayer@^2.1.0:
   version "2.1.1"
   resolved "https://registry.yarnpkg.com/outlayer/-/outlayer-2.1.1.tgz#29863b6de10ea5dadfffcadfa0d728907387e9a2"
   integrity sha512-+GplXsCQ3VrbGujAeHEzP9SXsBmJxzn/YdDSQZL0xqBmAWBmortu2Y9Gwdp9J0bgDQ8/YNIPMoBM13nTwZfAhw==
@@ -2103,6 +2111,14 @@ outlayer@^2.1.0:
     ev-emitter "^1.0.0"
     fizzy-ui-utils "^2.0.0"
     get-size "^2.0.2"
+
+packery@^2.0.0:
+  version "2.1.2"
+  resolved "https://registry.yarnpkg.com/packery/-/packery-2.1.2.tgz#92a3cc3303e781f151d93ee34d13325790c4f13f"
+  integrity sha512-Coc+8Atz03c0iu1RK0PZIJMKcKrE4i9Z8UBBywqz7Dhy40mMPM5wMQfqO9P2eqFP+lxKjGMTHgRAwjBQc+AQ5w==
+  dependencies:
+    get-size "^2.0.2"
+    outlayer "^2.0.0"
 
 parent-module@^1.0.0:
   version "1.0.1"

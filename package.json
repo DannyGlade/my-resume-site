@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@mantine/core": "^7.12.2",
+    "@mantine/form": "^7.12.2",
     "@mantine/hooks": "^7.12.2",
     "@splidejs/react-splide": "^0.7.12",
     "devicon": "^2.16.0",

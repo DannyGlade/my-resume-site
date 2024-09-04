@@ -1,5 +1,6 @@
 .skills {
    margin-top: 24px;
+   min-height: 100vh;
 }
 
 .skills__heading > h2 {
@@ -8,9 +9,18 @@
    width: 100%;
 }
 
+.skills__filters {
+   display: flex;
+   flex-direction: row;
+   align-items: center;
+   gap: 12px;
+   flex-wrap: wrap;
+   margin-bottom: 24px;
+}
+
 .skills__container {
    /* isotope */
-   display: inline-flex;
+   display: flex;
    flex-wrap: wrap;
    gap: 12px;
    justify-content: start;
@@ -31,6 +41,7 @@
    transition: all 0.5s ease;
    width: fit-content;
    font-size: 16px;
+   min-width: 1em;
 }
 
 .skill_card__icon {

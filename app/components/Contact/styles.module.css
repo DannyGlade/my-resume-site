@@ -1,26 +1,87 @@
 .contact {
-    margin-top: 24px;
+   margin-top: 24px;
 }
 
-.contact__heading>h2 {
-    font-size: 20px;
-    margin: 0 0 24px 0;
-    width: 100%;
+.contact__heading > h2 {
+   font-size: 20px;
+   margin: 0 0 24px 0;
+   width: 100%;
 }
 
 .contact__container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 24px;
-    /* width: 100%; */
+   display: flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   gap: 24px;
+   /* width: 100%; */
 }
 
 .contact_card {
-    padding: 24px;
-    border-radius: 24px;
-    background-color: #181A1B;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    gap: 12px;
-    transition: all 0.5s ease;
+   padding: 24px;
+   border-radius: 24px;
+   background-color: rgba(137, 137, 137, 0.27);
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   gap: 6px;
+   transition: all 0.5s ease;
+   text-decoration: none;
+   min-width: 10em;
+   color: inherit;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
+
+.contact_card:hover {
+   transform: translateY(-4px);
+   box-shadow: 0px 8px 8px rgba(0, 0, 0, 0.25);
+}
+
+.contact_card > p {
+   margin: 0;
+}
+
+.form__container {
+   margin-bottom: 24px;
+}
+
+/* 768px Tablet Css */
+@media screen and (min-width: 768px) {
+   .contact {
+      margin-top: 36px;
+   }
+
+   .contact__heading > h2 {
+      font-size: 24px;
+      margin: 0 0 36px 0;
+   }
+
+   .contact__container {
+      gap: 24px;
+   }
+
+   .contact_card {
+      padding: 24px;
+      border-radius: 24px;
+   }
+}
+
+/* 1440px Desktop Css */
+@media screen and (min-width: 1440px) {
+   .contact {
+      margin-top: 48px;
+   }
+
+   .contact__heading > h2 {
+      font-size: 40px;
+      margin: 0 0 48px 0;
+   }
+
+   .contact__container {
+      gap: 12px;
+   }
+
+   .contact_card {
+      padding: 36px;
+      border-radius: 36px;
+   }
 }

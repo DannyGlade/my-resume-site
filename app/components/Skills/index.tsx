@@ -1,10 +1,11 @@
+"use client";
 import React, { useRef, useState, useEffect, useMemo, use } from "react";
 import styles from "./styles.module.css";
 import SkillCard from "./SkillCard";
 import { Button, ButtonGroup, useComputedColorScheme } from "@mantine/core";
 import { MdFilterAlt } from "react-icons/md";
-import Isotope from "isotope-layout";
-import "isotope-packery";
+import type Isotope from "isotope-layout";
+// importing packery layout mode dynamically to avoid SSR issues
 
 export type Skill = {
    name: string;
@@ -181,32 +182,44 @@ export default function Skills() {
    const [filterKey, setFilterKey] = useState<FilterKey>(FilterKey["*"]);
 
    useEffect(() => {
-      setTimeout(() => {
-         setIsotope();
-      }, 600);
+      (async () => {
+         const Isotope = (await import("isotope-layout")).default;
+         await import("isotope-packery");
+
+         setTimeout(() => {
+            setIsotope(Isotope);
+         }, 600);
+      })();
 
       return () => {
          isotope.current?.destroy();
       };
    }, []);
 
-   const setIsotope = () => {
-      isotope.current = new Isotope(`.${styles.skills__container}`, {
-         itemSelector: `.${styles.skill_card}`,
-         percentagePosition: true,
-         layoutMode: "packery",
-         packery: {
-            gutter: 8,
-         },
-      });
-      isotope.current.arrange({ filter: "*" });
+   const setIsotope = (Isotope) => {
+      try {
+         if (typeof window === "undefined") return;
+         isotope.current = new Isotope(`.${styles.skills__container}`, {
+            itemSelector: `.${styles.skill_card}`,
+            percentagePosition: true,
+            layoutMode: "packery",
+            packery: {
+               gutter: 8,
+            },
+         });
+         //  isotope.current.arrange({ filter: "*" });
+      } catch (error) {
+         //  if (error.message === "No layout mode: packery") {
+         //     isotope.current = new Isotope(`.${styles.skills__container}`, {
+         //        itemSelector: `.${styles.skill_card}`,
+         //        percentagePosition: true,
+         //     });
+         //     console.error(error);
+         //  }
+      }
    };
 
    useEffect(() => {
-      if (!isotope.current) {
-         setIsotope();
-      }
-
       if (filterKey === FilterKey["*"]) {
          isotope.current?.arrange({ filter: "*" });
       } else {

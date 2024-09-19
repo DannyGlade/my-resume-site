@@ -8,6 +8,13 @@ import '@splidejs/react-splide/css/core';
 
 export default function Hero() {
 
+    const scrollDown = () => {
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        })
+    }
+
 
     return (
         <div className={styles.hero}>
@@ -35,7 +42,7 @@ export default function Hero() {
                     </Splide>
                 </div>
             </div>
-            <div className={styles.hero__scroll} >
+            <div className={styles.hero__scroll} onClick={scrollDown}>
                 <PiCaretDoubleDownDuotone size={32} />
             </div>
         </div>

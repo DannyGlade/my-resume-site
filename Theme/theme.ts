@@ -7,6 +7,7 @@ export const theme = createTheme({
    // colors: colors,
    white: "#fff",
    black: "#000",
+   primaryColor: "dark",
    headings: {
       fontFamily: "Major Mono Display",
       fontWeight: "700",

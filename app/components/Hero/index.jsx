@@ -2,10 +2,18 @@ import React from 'react'
 import styles from './styles.module.css'
 import './style.css'
 import Image from 'next/image'
+import { PiCaretDoubleDownDuotone } from "react-icons/pi";
 import { Splide, SplideSlide } from '@splidejs/react-splide'
 import '@splidejs/react-splide/css/core';
 
 export default function Hero() {
+
+    const scrollDown = () => {
+        window.scrollTo({
+            top: window.innerHeight,
+            behavior: 'smooth'
+        })
+    }
 
 
     return (
@@ -33,6 +41,9 @@ export default function Hero() {
                         </SplideSlide>
                     </Splide>
                 </div>
+            </div>
+            <div className={styles.hero__scroll} onClick={scrollDown}>
+                <PiCaretDoubleDownDuotone size={32} />
             </div>
         </div>
     )

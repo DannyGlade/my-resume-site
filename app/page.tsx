@@ -7,6 +7,7 @@ import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
 import styles from "./styles.module.css";
+import ScrollToTop from "./components/ScrollToTop/ScrollToTop";
 
 export default function Page() {
    return (
@@ -17,6 +18,7 @@ export default function Page() {
             <Skills />
             <Contact />
          </main>
+         <ScrollToTop />
          <Footer />
       </>
    );

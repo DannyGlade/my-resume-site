@@ -127,6 +127,12 @@ const skills: Skill[] = [
       category: FilterKey.design,
    },
    {
+      name: "Xd",
+      type: "plain",
+      colored: true,
+      category: FilterKey.design,
+   },
+   {
       name: "HTML5",
       type: "plain",
       colored: true,

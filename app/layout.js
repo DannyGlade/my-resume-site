@@ -9,7 +9,8 @@ import { theme } from '../Theme/theme';
 
 export const metadata = {
   title: 'Darshan Nariya',
-  description: 'This is my portfolio website',
+  description: 'Experienced Full Stack Developer in NodeJS, Laravel, React and React Native. I have a passion for building and designing web applications.',
+  image: 'https://iamdarshan.dev/DarshanNariyaMobile.png',
 }
 
 export default function RootLayout({ children }) {

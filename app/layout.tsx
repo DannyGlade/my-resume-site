@@ -31,6 +31,7 @@ export const metadata: Metadata = {
       url: "https://iamdarshan.dev",
       images: "https://iamdarshan.dev/WebsitePreview.png",
    },
+   robots: "index, follow",
 };
 
 export default function RootLayout({ children }) {

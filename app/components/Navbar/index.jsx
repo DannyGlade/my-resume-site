@@ -13,6 +13,25 @@ export default function Navbar() {
         setMenu(!menu)
     }
 
+    const scrollHandler = (e) => {
+        e.preventDefault()
+        scrollTo(e.target.dataset.to)
+    }
+
+    const scrollTo = (id) => {
+        // console.log(id);
+        const element = document.querySelector(id)
+        // console.log(element);
+        element?.scrollIntoView({ behavior: 'smooth', block: 'start' })
+        if (history.pushState) {
+            history.pushState(null, null, id);
+        }
+        else {
+            location.hash = id;
+        }
+
+    }
+
     return (
         <>
             <nav className={[styles.navbar, menu ? styles.navbar__expanded : ''].join(' ')}>
@@ -25,10 +44,10 @@ export default function Navbar() {
                 <div className={[styles.navbar__menu, menu ? styles.menu__expanded : styles.menu__collapsed].join(' ')} >
 
                     <div className={styles.navbar__menu_items}>
-                        <a href="#skills" className={styles.navbar__menu_item}>Skills</a>
-                        <a href="#experience" className={styles.navbar__menu_item}>Experience</a>
-                        <a href="#projects" className={styles.navbar__menu_item}>Projects</a>
-                        <a href="#contact" className={styles.navbar__menu_item}>Contact</a>
+                        <a href="#" data-to="#skills" onClick={(e) => scrollHandler(e)} className={styles.navbar__menu_item}>Skills</a>
+                        <a href="#" data-to="#experience" onClick={(e) => scrollHandler(e)} className={styles.navbar__menu_item}>Experience</a>
+                        <a href="#" data-to="#projects" onClick={(e) => scrollHandler(e)} className={styles.navbar__menu_item}>Projects</a>
+                        <a href="#" data-to="#contact" onClick={(e) => scrollHandler(e)} className={styles.navbar__menu_item}>Contact</a>
                         <ThemeToggle className={styles.navbar__menu_item} />
                     </div>
                     {/* <div className={styles.navbar__menu_items}>

@@ -111,6 +111,39 @@
    }
 }
 
+/* 1024px Laptop Css */
+@media screen and (min-width: 1024px) {
+   .hero {
+      height: 100vh;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-direction: row-reverse;
+   }
+
+   .hero__image_container {
+      width: 50%;
+   }
+
+   .hero__content {
+      width: 50%;
+      height: 100vmin;
+   }
+
+   .name__carousal {
+      display: flex !important;
+      justify-content: flex-start !important;
+      align-items: center !important;
+      width: 100% !important;
+      height: 100% !important;
+      font-size: 24px !important;
+   }
+
+   .name__carousal h1 {
+      font-size: 30px;
+   }
+}
+
 /* 1440px Desktop Css */
 
 @media screen and (min-width: 1440px) {

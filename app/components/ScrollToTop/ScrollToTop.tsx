@@ -1,6 +1,7 @@
+"use client";
+
 import React, { useEffect } from "react";
 import styles from "./ScrollToTop.module.css";
-import { Button } from "@mantine/core";
 import { PiCaretDoubleUpDuotone } from "react-icons/pi";
 
 export default function ScrollToTop() {

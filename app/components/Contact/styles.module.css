@@ -1,5 +1,6 @@
 .contact {
    padding-top: 24px;
+   min-height: 100vh;
 }
 
 .contact__heading > h2 {

@@ -18,6 +18,29 @@
    /* width: 100%; */
 }
 
+.experience__timeline {
+   --tl-bullet-size: calc(3.8rem * var(--mantine-scale)) !important;
+}
+
+.icon {
+   scale: 0.8;
+}
+
+.experience__title {
+   font-weight: 600;
+   font-size: medium;
+}
+
+.experience__company {
+   font-weight: 400;
+   font-size: small;
+}
+
+.experience__date {
+   font-weight: 400;
+   font-size: small;
+}
+
 /* 768px Tablet Css */
 @media screen and (min-width: 768px) {
    .experience {
@@ -32,6 +55,27 @@
    .experience__container {
       gap: 24px;
    }
+
+   .experience__timeline {
+      --tl-bullet-size: calc(4.8rem * var(--mantine-scale)) !important;
+   }
+
+   .icon {
+      scale: 1;
+   }
+
+   .experience__title {
+      font-size: large;
+   }
+
+   .experience__company {
+      font-size: medium;
+   }
+
+   .experience__date {
+      font-size: medium;
+   }
+   
 }
 
 /* 1440px Desktop Css */
@@ -47,5 +91,25 @@
 
    .experience__container {
       /* gap: 24px; */
+   }
+
+   .experience__timeline {
+      --tl-bullet-size: calc(4.8rem * var(--mantine-scale)) !important;
+   }
+
+   .icon {
+      scale: 1;
+   }
+
+   .experience__title {
+      font-size: x-large;
+   }
+
+   .experience__company {
+      font-size: large;
+   }
+
+   .experience__date {
+      font-size: large;
    }
 }

@@ -75,7 +75,7 @@ export default function Experiences() {
    return (
       <div id="experience" className={styles.experience}>
          <div className={styles.experience__heading}>
-            <h2>Experience</h2>
+            <h2>experience</h2>
          </div>
          <div className={styles.experience__container}>
             <Timeline

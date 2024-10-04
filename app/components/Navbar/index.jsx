@@ -46,7 +46,7 @@ export default function Navbar() {
                     <div className={styles.navbar__menu_items}>
                         <a href="#" data-to="#skills" onClick={(e) => scrollHandler(e)} className={styles.navbar__menu_item}>Skills</a>
                         <a href="#" data-to="#experience" onClick={(e) => scrollHandler(e)} className={styles.navbar__menu_item}>Experience</a>
-                        <a href="#" data-to="#projects" onClick={(e) => scrollHandler(e)} className={styles.navbar__menu_item}>Projects</a>
+                        {/* <a href="#" data-to="#projects" onClick={(e) => scrollHandler(e)} className={styles.navbar__menu_item}>Projects</a> */}
                         <a href="#" data-to="#contact" onClick={(e) => scrollHandler(e)} className={styles.navbar__menu_item}>Contact</a>
                         <ThemeToggle className={styles.navbar__menu_item} />
                     </div>

@@ -28,7 +28,7 @@ export default function Experiences() {
          startDate: new Date(Date.parse("04-01-2020")),
          current: true,
          location: "Canada",
-         icon: <SiFreelancer size={36} />,
+         icon: <SiFreelancer size={36} className={styles.icon} />,
       },
       {
          title: "Mobile Application Development",
@@ -38,7 +38,7 @@ export default function Experiences() {
          startDate: new Date(Date.parse("09-01-2023")),
          current: true,
          location: "Canada",
-         icon: <PiGraduationCapFill size={36} />,
+         icon: <PiGraduationCapFill size={36} className={styles.icon} />,
       },
       {
          title: "Full Stack Web Developer",
@@ -49,7 +49,7 @@ export default function Experiences() {
          current: false,
          endDate: new Date(Date.parse("01-01-2021")),
          location: "India",
-         icon: <PiSuitcaseSimpleFill size={36} />,
+         icon: <PiSuitcaseSimpleFill size={36} className={styles.icon} />,
       },
       {
          title: "Assistant Computer Teacher",
@@ -60,7 +60,7 @@ export default function Experiences() {
          current: false,
          endDate: new Date(Date.parse("04-01-2022")),
          location: "India",
-         icon: <PiSuitcaseSimpleFill size={36} />,
+         icon: <PiSuitcaseSimpleFill size={36} className={styles.icon} />,
       },
       {
          title: "Bachelor of Computer Applications",
@@ -69,7 +69,7 @@ export default function Experiences() {
          current: false,
          endDate: new Date(Date.parse("04-01-2022")),
          location: "India",
-         icon: <PiGraduationCapFill size={36} />,
+         icon: <PiGraduationCapFill size={36} className={styles.icon} />,
       },
    ];
    return (
@@ -83,21 +83,22 @@ export default function Experiences() {
                bulletSize={48 + 24}
                lineWidth={6}
                color="#ddd"
+               className={styles.experience__timeline}
             >
                {experiences.map((experience, index) => (
                   <Timeline.Item
                      key={index}
                      title={
-                        <Text fw={600} size="xl">
+                        <Text className={styles.experience__title}>
                            {experience.title}
                         </Text>
                      }
                      bullet={experience.icon}
                   >
-                     <Text size="lg">
+                     <Text className={styles.experience__company}>
                         {experience.company} - {experience.location}
                      </Text>
-                     <Text size="md">
+                     <Text className={styles.experience__date}>
                         {experience.startDate.toLocaleDateString("en-locale", {
                            month: "short",
                            year: "numeric",

@@ -1,0 +1,15 @@
+.icon {
+   scale: 0.8;
+}
+
+@media screen and (min-width: 768px) {
+   .icon {
+      scale: 1;
+   }
+}
+
+@media screen and (min-width: 1440px) {
+   .icon {
+      scale: 1;
+   }
+}

@@ -33,7 +33,7 @@ const experiences: Experience[] = [
          "I have completed a Mobile Application Development course at Fanshawe College.",
       startDate: new Date(Date.parse("09-01-2023")),
       current: true,
-      location: "Canada",
+      location: "London, Canada",
       icon: <PiGraduationCapFill size={36} className={styles.icon} />,
    },
    {
@@ -44,18 +44,29 @@ const experiences: Experience[] = [
       startDate: new Date(Date.parse("04-01-2020")),
       current: false,
       endDate: new Date(Date.parse("01-01-2021")),
-      location: "India",
+      location: "Surat, India",
       icon: <PiSuitcaseSimpleFill size={36} className={styles.icon} />,
    },
    {
-      title: "Assistant Computer Teacher",
+      title: "PHP Developer Intern",
+      company: "KG Krunch Solutions",
+      description:
+         "I have worked as a PHP Developer Intern and developed web applications using PHP.",
+      startDate: new Date(Date.parse("01-01-2022")),
+      current: false,
+      endDate: new Date(Date.parse("06-01-2022")),
+      location: "Surat, India",
+      icon: <PiSuitcaseSimpleFill size={36} className={styles.icon} />,
+   },
+   {
+      title: "Computer Teacher",
       company: "ABC Computer Education",
       description:
-         "I have worked as an Assistant Computer Teacher and taught computer programming to students.",
-      startDate: new Date(Date.parse("02-01-2021")),
+         "I have worked as a Computer Teacher and taught computer programming to students.",
+      startDate: new Date(Date.parse("04-01-2020")),
       current: false,
-      endDate: new Date(Date.parse("04-01-2022")),
-      location: "India",
+      endDate: new Date(Date.parse("04-01-2021")),
+      location: "Surat, India",
       icon: <PiSuitcaseSimpleFill size={36} className={styles.icon} />,
    },
    {
@@ -64,8 +75,19 @@ const experiences: Experience[] = [
       startDate: new Date(Date.parse("08-01-2019")),
       current: false,
       endDate: new Date(Date.parse("04-01-2022")),
-      location: "India",
+      location: "Surat, India",
       icon: <PiGraduationCapFill size={36} className={styles.icon} />,
+   },
+   {
+      title: "Assistant Computer Teacher",
+      company: "ABC Computer Education",
+      description:
+         "I have worked as an Assistant Computer Teacher and taught computer programming to students.",
+      startDate: new Date(Date.parse("11-01-2019")),
+      current: false,
+      endDate: new Date(Date.parse("04-01-2020")),
+      location: "Surat, India",
+      icon: <PiSuitcaseSimpleFill size={36} className={styles.icon} />,
    },
 ];
 
